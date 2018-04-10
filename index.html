@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Trimantecs™</title>
+		<link rel="stylesheet" href="css/screen.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Trimantecs™ Example / Template</h1>
+		</header>
+		<nav>
+			<button
+				data-namespace="View"
+				data-method="show"
+				data-param="article-1">
+				Intro
+			</button>
+			<button
+				data-namespace="View"
+				data-method="show"
+				data-param="article-2">
+				Joke
+			</button>
+			<button
+				data-namespace="View"
+				data-method="show"
+				data-param="article-3">
+				Quote
+			</button>
+		</nav>
+		<main>
+			<article id="article-1">
+				<header>
+					<h2>What to do</h2>
+				</header>
+				<section>
+					<p>Click the other nav buttons above to see the other sections.</p>
+				</section>
+			</article>
+			<article id="article-2" class="hidden">
+				<header>
+					<h2>Random Chuck Norris Jokes</h2>
+				</header>
+				<nav>
+					<button
+						data-namespace="Chuck"
+						data-method="getRandomJoke">
+						Random Joke
+					</button>
+				</nav>
+				<section>
+					<p class="attribution">Press the button to get a random Chuck Norris joke courtesy of <a href="https://api.chucknorris.io/" target="_blank">ChuckNorris.io</a>.</p>
+				</section>
+				<section class="section-container">
+					<figure id="random-joke">
+						<img src="">
+						<figcaption></figcaption>
+					</figure>
+				</section>
+			</article>
+			<article id="article-3" class="hidden">
+				<header>
+					<h2>Random Quote</h2>
+				</header>
+				<nav>
+					<button
+						data-namespace="Quote"
+						data-method="getRandomQuote">
+						Random Quote
+					</button>
+				</nav>
+				<section>
+					<p class="attribution">Press the button to get a random quote courtesy of <a href="https://quotesondesign.com/" target="_blank">Quotes on Design</a>.</p>
+				</section>
+				<section class="section-container">
+					<q id="quote"></q>
+					<cite for="quote"></cite>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+				<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+			</a>
+			<div>
+				<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Trimantec</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://about.me/mattbontrager" property="cc:attributionName" rel="cc:attributionURL">Matt Bontrager</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+			</div>
+			<div>Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/mattbontrager/trimantec.git" rel="dct:source">https://github.com/mattbontrager/trimantec.git</a>
+			</div>
+		</footer>
+		<script src="js/jquery-3.0.0.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
