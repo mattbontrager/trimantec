@@ -132,5 +132,6 @@ var App = (function App() {
 }());
 
 $(function() {
+	// initialize the app
 	App.init();
 });
